@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Controller.ProfileUser">
+
+
+    <LinearLayout
+        android:id="@+id/profileData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#80D8FF"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="330dp"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_baseline_more_horiz_24"
+                    android:onClick="logOut"
+                    />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_user_profile"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            >
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_user_profilep"
+                android:layout_marginTop="30dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Firts Name"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/firstName"
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="bouzid"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="last Name"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/lastName"
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Abdelfattah"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_lock_profile"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="ZT277359"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="80dp">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_email_profile"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="bouzid7@gmail.com"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--     modify data of user ptofile -->
+
+    <!--
+   <LinearLayout
+       android:id="@+id/profileDataModif"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:visibility="gone"
+       >
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="150dp"
+           android:background="#80D8FF"
+           >
+
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="@drawable/ic_contact"
+               />
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="130dp"
+           android:orientation="horizontal">
+           >
+           <ImageView
+               android:layout_width="60dp"
+               android:layout_height="60dp"
+               android:background="@drawable/ic_user_profile"
+               android:layout_marginTop="30dp"
+               />
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               >
+               <com.google.android.material.textfield.TextInputLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="Firts Name"
+                   >
+
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:id="@+id/firstNameM"
+                       android:layout_width="match_parent"
+                       android:padding="10dp"
+                       android:layout_height="wrap_content" />
+               </com.google.android.material.textfield.TextInputLayout>
+
+               <com.google.android.material.textfield.TextInputLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="last Name"
+                   >
+
+                   <com.google.android.material.textfield.TextInputEditText
+                       android:id="@+id/lastNameM"
+                       android:layout_width="match_parent"
+                       android:padding="10dp"
+                       android:layout_height="wrap_content" />
+               </com.google.android.material.textfield.TextInputLayout>
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="70dp"
+           android:orientation="horizontal"
+           android:layout_marginTop="5dp"
+           >
+           <ImageView
+               android:layout_width="60dp"
+               android:layout_height="60dp"
+               android:background="@drawable/ic_birth_profile"
+               />
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Birth Date "
+               >
+
+               <com.google.android.material.textfield.TextInputEditText
+                   android:id="@+id/birthDateM"
+                   android:layout_width="match_parent"
+                   android:padding="10dp"
+                   android:layout_height="wrap_content" />
+           </com.google.android.material.textfield.TextInputLayout>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="70dp">
+
+           <ImageView
+               android:layout_width="60dp"
+               android:layout_height="60dp"
+               android:background="@drawable/ic_lock_profile"
+               />
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Password"
+               >
+
+               <com.google.android.material.textfield.TextInputEditText
+                   android:id="@+id/passwordM"
+                   android:layout_width="match_parent"
+                   android:padding="10dp"
+                   android:layout_height="wrap_content" />
+           </com.google.android.material.textfield.TextInputLayout>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="80dp">
+           <ImageView
+               android:layout_width="60dp"
+               android:layout_height="60dp"
+               android:background="@drawable/ic_email_profile"
+               />
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Email"
+               >
+
+               <com.google.android.material.textfield.TextInputEditText
+                   android:id="@+id/emailM"
+                   android:layout_width="match_parent"
+                   android:padding="10dp"
+                   android:layout_height="wrap_content" />
+           </com.google.android.material.textfield.TextInputLayout>
+
+       </LinearLayout>
+   </LinearLayout>
+   -->
+</LinearLayout>

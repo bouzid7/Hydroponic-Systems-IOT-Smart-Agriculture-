@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "994155404173",
+    "firebase_url": "https://projets4greenhouse-default-rtdb.firebaseio.com",
+    "project_id": "projets4greenhouse",
+    "storage_bucket": "projets4greenhouse.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:994155404173:android:479eaedf01eaf6be55bbc4",
+        "android_client_info": {
+          "package_name": "com.iot.projects4iotmobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "994155404173-lippohcvlnfv5g03fai239auahscng41.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmV31uKb0n2k_3zxg0F7Db0kgwu6zDSwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "994155404173-lippohcvlnfv5g03fai239auahscng41.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

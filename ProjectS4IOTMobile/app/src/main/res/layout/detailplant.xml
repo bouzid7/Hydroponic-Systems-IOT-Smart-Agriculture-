@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Controller.DetailPlant"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/backk" />
+
+
+
+        <ImageView
+            android:id="@+id/favorite_true"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            app:srcCompat="@drawable/starp"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/favorite_false"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="220dp"
+            app:srcCompat="@drawable/star"
+            android:visibility="visible"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/editPlant"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/edit" />
+
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:onClick="menuDetails"
+            app:srcCompat="@drawable/menu_dash" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/photo_plant"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="350dp"
+            android:layout_marginBottom="15dp" />
+
+
+        <TextView
+            android:id="@+id/identification_plant"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Name of plant"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="350dp"
+            app:dividerColor="#1DE9B6"
+            app:dividerInsetEnd="16dp"
+            app:dividerInsetStart="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField1"
+            style="@style/Widget.MaterialComponents.ActionBar.Solid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/search_view"
+            android:textColorHint="#6200EE">
+
+            <TextView
+                android:id="@+id/infoPlant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="100"
+                android:padding="16dp"
+                android:textColor="@color/black"
+                android:text="je suis bouzid abdelfattah idsit 2023"
+                android:textSize="20dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

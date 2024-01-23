@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".Controller.Plants"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!-- BEGIN : Interface of ALL PLANTS   -->
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="visible"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            >
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_view"
+                android:layout_marginTop="10dp"
+                app:queryHint="search..."
+                />
+
+            <ImageView
+                android:id="@+id/dropdown_menu1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/menu"
+                android:onClick="plantsMenu"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/contacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:orientation="vertical"
+        >
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_marginTop="10dp"
+            android:contentDescription="Ajouter un nouveau plant"
+            android:src="@android:drawable/ic_input_add"
+            app:backgroundTint="#6200EE"
+            android:layout_marginRight="20dp"
+            >
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_plants"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+</LinearLayout>
